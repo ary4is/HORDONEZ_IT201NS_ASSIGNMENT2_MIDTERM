@@ -26,11 +26,9 @@ namespace HORDONEZ_IT201NS_ASSIGNMENT2_MIDTERM
 
         private void UpdateLabel()
         {
-            // This math turns total seconds into Minutes : Seconds
             int min = timeLeft / 60;
             int sec = timeLeft % 60;
 
-            // The "D2" ensures it always has 2 digits (e.g., 05 instead of 5)
             lblTimer.Text = $"{min:D2}:{sec:D2}";
         }
 
