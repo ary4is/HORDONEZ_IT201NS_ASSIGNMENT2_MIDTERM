@@ -27,7 +27,6 @@ namespace HORDONEZ_IT201NS_ASSIGNMENT2_MIDTERM
                 }
             }
 
-            // If not open, set parent and show
             childForm.MdiParent = this;
             childForm.Show();
         }
