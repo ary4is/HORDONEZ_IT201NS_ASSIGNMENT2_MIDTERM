@@ -18,12 +18,11 @@ namespace HORDONEZ_IT201NS_ASSIGNMENT2_MIDTERM
         }
         private void OpenChildForm(Form childForm)
         {
-            // Check if the form is already open
             foreach (Form openForm in this.MdiChildren)
             {
                 if (openForm.GetType() == childForm.GetType())
                 {
-                    openForm.Activate(); // Bring existing form to front
+                    openForm.Activate();
                     return;
                 }
             }
