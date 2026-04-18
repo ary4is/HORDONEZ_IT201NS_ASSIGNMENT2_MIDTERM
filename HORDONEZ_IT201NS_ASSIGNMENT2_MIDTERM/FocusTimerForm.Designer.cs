@@ -117,6 +117,7 @@
             // focusTimer
             // 
             this.focusTimer.Interval = 1000;
+            this.focusTimer.Tick += new System.EventHandler(this.focusTimer_Tick_1);
             // 
             // FocusTimerForm
             // 

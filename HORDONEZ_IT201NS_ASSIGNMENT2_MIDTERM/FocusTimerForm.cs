@@ -24,20 +24,6 @@ namespace HORDONEZ_IT201NS_ASSIGNMENT2_MIDTERM
 
         private int timeLeft;
 
-        private void focusTimer_Tick(object sender, EventArgs e)
-        {
-            if (timeLeft > 0)
-            {
-                timeLeft--;
-                UpdateLabel();
-            }
-            else
-            {
-                focusTimer.Stop();
-                MessageBox.Show("Time's up!");
-            }
-        }
-
         private void UpdateLabel()
         {
             // This math turns total seconds into Minutes : Seconds
@@ -75,6 +61,20 @@ namespace HORDONEZ_IT201NS_ASSIGNMENT2_MIDTERM
             timeLeft = 0;
             txtTime.Clear();
             lblTimer.Text = "00:00";
+        }
+
+        private void focusTimer_Tick_1(object sender, EventArgs e)
+        {
+            if (timeLeft > 0)
+            {
+                timeLeft--;
+                UpdateLabel();
+            }
+            else
+            {
+                focusTimer.Stop();
+                MessageBox.Show("Time's up!");
+            }
         }
     }
 }
